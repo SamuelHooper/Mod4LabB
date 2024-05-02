@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mod3LabB.SwiperPage">
+    <VerticalStackLayout>
+
+        <Image x:Name="SwipeImage" WidthRequest="400">
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeLeft" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeRight" />
+            </Image.GestureRecognizers>
+        </Image>
+        <Label x:Name="SwipeQuizOutput" Text=""/>
+    </VerticalStackLayout>
+</ContentPage>
